@@ -1,0 +1,52 @@
+# Volumes
+texts/*
+
+# Git
+.git/
+.gitignore
+
+# Docker
+.docker/
+
+# CI
+*.travis.yml
+
+# Python
+**/__pycache__
+**/*.py[cod]
+env/
+venv/
+
+# C/C++
+**/*.a
+**/*.lib
+**/*.so
+**/*.deps
+**/*.la
+**/*.lai
+**/*.lo
+
+# Logs
+**/*.log
+
+# Texts
+**/README*
+**/AUTHORS
+**/NEWS
+**/COPYING
+**/ChangeLog
+!tools/crfsuite/crfsuite-0.12/
+
+**/doc/
+**/*.txt
+**/*.md
+**/*.pdf
+!stanford-parser-full-2014-01-04/data/
+
+# Zips
+**/*.zip
+
+# Misc
+**/example/
+**/examples/
+**/*.vcxproj
