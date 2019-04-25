@@ -46,4 +46,4 @@ RUN apk del py2-pip && \
 	/var/cache/apk/*
 
 WORKDIR /opt/feng-hirst-rst-parser/src
-CMD ["/bin/sh"]
+ENTRYPOINT ["python", "parse.py"]
