@@ -30,6 +30,8 @@ RUN ./configure --prefix=$HOME/local --with-liblbfgs=$HOME/local && \
 
 FROM alpine
 
+LABEL description="Run RST parser by Vanessa Wei Feng at http://www.cs.toronto.edu/~weifeng/software.html, with fixes by arne-cl at https://github.com/arne-cl/feng-hirst-rst-parser"
+
 RUN apk update && \
     apk add --no-cache py2-pip py2-setuptools openjdk8-jre-base perl && \
     pip install nltk==3.4

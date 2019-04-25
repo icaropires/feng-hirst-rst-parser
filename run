@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sudo docker run --rm -v "$PWD/texts":/opt/feng-hirst-rst-parser/texts icaropires/feng-hirst-rst-parser:0.1 "../$1"
